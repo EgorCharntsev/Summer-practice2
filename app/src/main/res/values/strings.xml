@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">SecondApplication</string>
+    <string name="app_name">Second Application</string>
+    <string name="hello_blank_fragment">Profile screen</string>
 </resources>
