@@ -8,28 +8,18 @@ import com.itis.secondapplication.databinding.FragmentMainBinding
 
 class MainFragment : Fragment(R.layout.fragment_main) {
 
-    private var binding : FragmentMainBinding? = null
+    private var binding: FragmentMainBinding? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMainBinding.bind(view)
 
-//        binding?.run {
-//            btnToChats.setOnClickListener {
-//                findNavController().navigate(R.id.action_mainFragment_to_chatFragment)
-//            }
-//            btnToProfile.setOnClickListener {
-//
-//                findNavController().navigate(R.id.action_mainFragment_to_profileFragment,
-//                ProfileFragment.createBundle("JoJo", 33))
-//            }
-//            btnToServices.setOnClickListener {
-//                findNavController().navigate(R.id.action_mainFragment_to_serviceFragment)
-//            }
-//            btnToSettings.setOnClickListener {
-//                findNavController().navigate(R.id.action_mainFragment_to_settingFragment)
-//            }
-//        }
+        binding?.btnNavigationToMusic?.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_mainFragment_to_musicFragment,
+                MusicFragment.createBundle(MainFragment().javaClass.name)
+            )
+        }
     }
 
     override fun onDestroyView() {

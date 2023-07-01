@@ -9,7 +9,7 @@ import com.itis.secondapplication.databinding.FragmentMusicBinding
 
 class MusicFragment : Fragment(R.layout.fragment_music) {
 
-    private var binding : FragmentMusicBinding? = null
+    private var binding: FragmentMusicBinding? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -20,7 +20,7 @@ class MusicFragment : Fragment(R.layout.fragment_music) {
             Snackbar.make(binding!!.root, className, Snackbar.LENGTH_LONG).show()
         }
 
-        binding?.btnNavigationToServices?.setOnClickListener{
+        binding?.btnNavigationToServices?.setOnClickListener {
             findNavController().navigateUp()
         }
     }
@@ -29,7 +29,7 @@ class MusicFragment : Fragment(R.layout.fragment_music) {
 
         private const val CLASS_NAME = "CLASS_NAME"
 
-        fun createBundle(name: String) : Bundle {
+        fun createBundle(name: String): Bundle {
             val bundle = Bundle()
             bundle.putString(CLASS_NAME, name)
 
@@ -41,6 +41,4 @@ class MusicFragment : Fragment(R.layout.fragment_music) {
         super.onDestroyView()
         binding = null
     }
-
-
 }

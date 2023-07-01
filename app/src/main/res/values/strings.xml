@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">Second Application</string>
     <string name="hello_blank_fragment">Profile screen</string>
+    <string name="go_to_back">Go to Back</string>
+    <string name="music_screen">Music screen</string>
+    <string name="chats_screen">Chats screen</string>
+    <string name="main_screen">Main screen</string>
+    <string name="profile_screen">Profile screen</string>
+    <string name="services_screen">Services screen</string>
+    <string name="go_to_music">Go to Music</string>
+    <string name="settings_screen">Settings screen</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="chats">Chats</string>
+    <string name="services">Services</string>
+    <string name="settings">Settings</string>
 </resources>
